@@ -1,0 +1,106 @@
+/* body utilizado para quitarle el margen que tiene por defecto y poner un color de fondo*/
+body{
+    margin: 0;
+    background-color: #e5e5e5;
+}
+/* contenedor se encarga de poner un tipo de letra a todo y los margenes deseados para simular una hoja, ademas de tambien poner un fondo 
+de color y bordes*/
+.Contenedor{
+    font-family: Georgia, serif;
+
+    background-color: rgb(243, 241, 209);
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 1px solid #000000;
+}
+/*el header encargado del encabezado donde se utliza display flex para poner lo que contiene en forma horizontal 
+se le da una altura de 200px y un fondo, ademas se alinea en el centro y utiliza transform:skewY() para mover en grados el header*/
+header{
+    display: flex;
+    height: 200px;
+    background-color: #43aa88;
+    align-items: center;
+    transform: skewY(-3deg);
+}
+/*imagen utilizada para darle una altura de 150px y un margen de 10% donde tambien se utiliza transform: skewY() para mover en grados y border 
+radius para darle el efecto de la imagen redonda*/
+.imagen{
+    height: 150px;
+    margin-left: 10%;
+    transform: skewY(3deg);
+    border-radius: 80px;
+}
+/*nombre utilizado para personalizar el nombre en la parte del enzabezado */
+.nombre{
+
+    margin-left: 10%;
+    color: #FFF8F0;
+    font-size: 30px;
+    font-weight: bolder;
+    transform: skewY(3deg);
+}
+/*en columnas se utiliza el display flex para colocar la columna izquierda y derecha una seguida de otra y no debajo, se le da un margen 
+izquierdo, derecho y de arriba y un justify-content: space-between  para que las dos columnas no esten unidas si no una de cada lado */
+.columnas{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+    justify-content: space-between;
+}
+/*columizquierda utilizada para darle un flex basis para poder determinar la base flexible es decir cuanto utilizara la columna */
+.columizquierda{
+    flex-basis: 40%;
+    line-height: 1.5;
+
+}
+/*columderecha utilizada para darle un flex basis para poder determinar la base flexible es decir cuanto utilizara la columna */
+.columderecha{
+    flex-basis: 40%;
+    line-height: 1.5;
+
+}
+/*subtitulo y parrafo utilizado para personalizar los h5 y p que aparecen en html para poder darle un margen de arriba de 0 y de abajo 3px*/
+.subtitulo , .parrafo{
+    margin-top: 0;
+    margin-bottom: 3px;
+
+}
+/*titulo utilizado para personalizar los h4 que aparecen en html y poder darle un margen de abajo de 30px*/
+.titulo{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+/*tablas utilizada para centrar la tabla que se guardara en ella*/
+.tablas{
+    display: flex;
+    justify-content: center;
+}
+/*captio en utilizado como el titulo de la tabla en este casi donde se personalizara todo los bordes el area de relleno, etc*/
+caption{
+    font-weight: bolder;
+    padding: 15px;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    background-color: #68f1a1;
+    color: #FFFFFF;
+}
+/*table es utilidado para darle un margen de arriba y de abajo de 40 px a la tabla y para que los bordes collapsen entre si y no se vean 
+separados*/
+table{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+}
+/*td y th son utilizados para personalizar el borde y el relleno interior de cada recuadro de la tabla*/
+td, th{
+    border: 2px solid #000000;
+    padding: 15px;
+}
+/*th se utiliza para dale un relleno negro con letras blancas a las seldas subtitulos */
+th{
+    background-color:#17c45f;
+    color: #FFFFFF;
+}
